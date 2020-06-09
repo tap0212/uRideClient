@@ -1,8 +1,8 @@
-#uRide-PWA
+# uRide-PWA
 
-##Simplified Car Rental Service
+## Simplified Car Rental Service
 
-###Live link[https:uride.netlify.app]
+### Live link[https:uride.netlify.app]
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
