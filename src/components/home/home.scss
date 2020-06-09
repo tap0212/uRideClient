@@ -1,0 +1,564 @@
+@import '../../utilities/theme.scss';
+
+
+//HERO
+
+.hero-box{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll{
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  top: 65%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+.icon-scroll:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+.icon-scroll:hover{
+    cursor: pointer;
+}
+@keyframes scroll{
+  0%{
+    opacity: 1}
+  100%{
+    opacity: 0;
+    transform: translateY(46px)}
+}
+.hero-h1{
+    margin-top: 25vh;
+    font-weight: 200;
+    font-size: 3em;
+    padding: 2%;
+   // text-align: center;
+}
+
+.card-container{
+    height: 25vh;
+    width: 50vw;
+    margin-left: 25vw;
+    .hero-card-1{
+        height: 20vh;
+        margin-top: 2.5vh;
+    }
+    .hero-card-2{
+        height: 20vh;
+        margin-top: 2.5vh;
+    }
+    .hero-h3{
+        font-weight: 300;
+    }
+}
+.hero-box-bright{
+    background-color: $black;
+    color: white;
+    .hero-h1{
+        color: white;
+    }
+    .hero-icon g{
+        fill: $off;
+    }
+    .hero-icon path {
+        stroke: $off;
+        stroke-width: 5px;
+    }
+}
+.hero-box-dark{
+    .hero-icon-svg path{
+        stroke: white;
+    }
+    background-color: $black;
+    .hero-h1{
+        color: white;
+    }
+}
+
+
+
+//CITIES
+
+
+.city-box{
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.city-box-container{
+    overflow: hidden;
+    width: 60vw;
+    margin-left: 20vw;
+    padding-top: 0;
+}
+.city-container{
+    margin-top: 0vh;
+}
+.city-h1{
+    color: $blue;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.city-icon-div{
+    text-align: center;
+    cursor: pointer;
+    margin-left: 0.8vw;
+    height: 20vh;
+    padding-bottom: 2vh;
+    margin-bottom: 0;
+    border-radius: 5px;
+    transition: 0.2s all ease-in;
+}
+
+.city-p{
+    text-align: center;
+    font-weight: 400;
+}
+.city-icon{
+    width: 35%;
+    margin-top: 2vh;
+}
+.city-h2{
+    text-align: center;
+    font-weight: 300;
+}
+
+.city-box-bright{
+    .city-icon-div{
+        background-color: $off;
+    }
+    .city-icon-div:hover, .city-icon-div:active{
+        border-radius: 5px;
+        background: #D5D5D5;
+        box-shadow:  11px 11px 22px #b5b5b5, 
+                 -11px -11px 22px #f5f5f5;
+    }
+}
+.city-box-dark{
+    background-color: $navy;
+    .city-icon-div{
+        background-color: $navy-lt;
+    }
+    .city-icon-div:hover, .city-icon-div:active{
+        border-radius: 5px;
+        background: #161625;
+        box-shadow:  11px 11px 22px #13131f, 
+             -11px -11px 22px #19192b;
+    }
+    .city-icon g{
+        fill: white;
+    }
+    .city-icon path {
+        stroke: white;
+        stroke-width: 5px;
+    }
+    .city-p{
+        color: $blue;
+        font-weight: 500;
+    }
+    .city-h1{
+        color: $blue;
+        font-weight: 300;
+    }
+    .city-h2{
+        color: white;
+    }
+}
+
+//Plan
+
+.plan-container{
+    width: 100%;
+    h1{
+        margin-top: 10vh;
+        font-size: 3em;
+        font-weight: 200;
+        margin-left: 5vw;
+    }
+    h3{
+        font-weight: 300;
+        margin-left: 5vw;
+        font-size: 2em;
+    }
+    .plan-svg{
+        width: 70%;
+    }
+    .ride-link{
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-left: 10vh;
+        padding: 1%;
+    }
+}
+
+.plan-container-bright{
+      h3{
+          color: $blue;
+      }
+      .ride-link{
+          background-color: $navy;
+          color: white;
+          transition: 0.2s all ease-in-out;
+      }
+      .ride-link:hover, .ride-link:active{
+          background-color: $blue;
+          cursor: pointer;
+      }
+}
+.plan-container-dark{
+    background-color: #000a12;
+  
+    h1{
+        font-weight: 300;
+        color: $blue;
+    }
+    h3{
+        color: $off;
+        font-weight: 300;
+    }
+    .ride-link{
+        background-color: $blue;
+        color: white;
+        transition: 0.2s all ease-in-out;
+    }
+    .ride-link:hover, .ride-link:active{
+        background-color: $navy;
+        cursor: pointer;
+    }
+}
+
+
+
+
+//How
+
+
+.how-container{
+    padding-top: 1vh;
+    text-align: center;
+    height: 40vh;
+    width: 100%;
+    .how-h1{
+        font-weight: 300;
+        color: $blue;
+    }
+    .how-h4{
+        font-weight: 400;
+    }
+    .how-icon{
+        margin-top: 3vh;
+    }
+
+    .steps{
+        width: 60%;
+        margin-left: 20%;
+        .step{
+            margin-left: 10%;
+            margin-top: 2vh;
+            height: 20vh;
+            max-height: 20vh;
+            h4{
+                font-weight: 400;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            p{
+                padding: 2%;
+                padding-left: 3%;
+                padding-right: 3%;
+                font-weight: 300;
+                font-size: 0.85em;
+            }
+        }
+    }
+
+}
+
+.how-container-bright{
+    background-color: $off;
+    .step{
+        border-radius: 5px;
+        background: #D5D5D5;
+        box-shadow:  5px 5px 10px #cccccc, 
+                      -5px -5px 10px #dedede;
+        transition: 0.3s all ease-in;
+    }
+    .step:hover, .step:active{
+        cursor: pointer;
+        border-radius: 5px;
+        background: #D5D5D5;
+        box-shadow:  25px 25px 50px #cccccc, 
+             -      25px -25px 50px #dedede;
+    }
+}
+.how-container-dark{
+    background-color: $navy-lt;
+    color: white;
+    .step{
+        border-radius: 5px;
+        background: #161625;
+        box-shadow:  7px 7px 14px #141422, 
+                     -7px -7px 14px #181828;
+        .how-icon path {
+            stroke:$off;
+        }
+    }
+    .step:hover, .step:active{
+        cursor: pointer;
+        border-radius: 5px;
+        background: #161625;
+        box-shadow:  23px 23px 46px #11111d, 
+                     -23px -23px 46px #1b1b2d;
+    }
+}
+
+
+
+//earn
+
+
+.earn-container{
+    width: 100%;
+    h1{
+        margin-top: 20vh;
+        font-size: 3em;
+        font-weight: 200;
+        margin-left: 5vw;
+    }
+    h3{
+        font-weight: 300;
+        margin-left: 5vw;
+        font-size: 2em;
+    }
+    .earn-svg{
+        width: 70%;
+        margin-left: 5vw;
+    }
+    .lend-link{
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-left: 10vh;
+        padding: 1%;
+    }
+}
+
+.earn-container-bright{
+      h3{
+          color: $blue;
+      }
+      .lend-link{
+        background-color: $navy;
+        color: white;
+        transition: 0.2s all ease-in-out;
+    }
+    .lend-link:hover, .ride-link:active{
+        background-color: $blue;
+        cursor: pointer;
+    }
+}
+.earn-container-dark{
+    background-color: #000a12;
+    h1{
+        font-weight: 200;
+        color: $blue;
+    }
+    h3{
+        color:$off;
+        font-weight: 300;
+    }
+    .lend-link{
+        background-color: $blue;
+        color: white;
+        transition: 0.2s all ease-in-out;
+    }
+    .lend-link:hover, .ride-link:active{
+        background-color: $navy;
+        cursor: pointer;
+
+    }
+}
+
+//footer
+.footer{  
+    height: 20vh;
+    width: 100%;
+    padding-top: 2vh;
+    background-color: $black;
+    color: white;
+    text-align: center;
+    h3, h4{
+        padding-bottom: 1%;
+        padding-top: 1%;
+        font-weight: 200;
+    }
+}
+
+@media only screen and (min-width:500px) and  (max-width:960px){
+    .city-icon-div{
+        height: 10vh;
+    }
+    .plan-container{
+        text-align: center;
+        h1{
+            margin-top: 0vh;
+            margin-left: 0vw;
+        }
+        h3{
+            margin-left: 0vw;
+        }
+        .ride-link{
+            margin-left: 0;
+        }
+    }
+    .how-container{
+        height: auto;
+        .steps{
+            padding-bottom: 5%;
+        }
+    }
+
+    .earn-container{
+        text-align: center;
+        padding-bottom: 5%;
+        h1{
+            margin-top: 0vh;
+            margin-left: 0vw;
+        }
+        h3{
+            margin-left: 0vw;
+        }
+        .lend-link{
+            margin-left: 0;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    .hero-box{
+        height: 35vh;
+        h1{
+            margin-top: 10vh;
+            font-size: 1.6em;
+        }
+    }
+    .icon-scroll{
+        display: none;
+    }
+    .city-box{
+        height: auto ;
+    }
+
+    .city-box-container{
+        padding-bottom: 5vh;
+        h1{
+            font-size: 1.5em;
+            padding: 3%;
+        }
+        h2{
+            font-size:1.3em;
+        }
+    }
+    .city-icon-div{
+        height: auto;
+        p{
+            font-size: 0.6em;
+            font-weight: 300;
+            padding-top: 10%;
+        }
+    }
+    .plan-container{
+        text-align: center;
+        h1{
+            font-size: 1.5em;
+            margin-top: 5vh;
+            margin-left: 0vw;
+        }
+        h3{
+            font-size: 1.2em;
+            margin-left: 0vw;
+        }
+        .ride-link{
+            margin-left: 0;
+        }
+        .ride-link{
+            font-size: 1em;
+            padding: 1%;
+        }
+    }
+    .how-container{
+        height: auto;
+        h4{
+            padding: 3%;
+        }
+        .steps{
+            padding-bottom: 5%;
+            .step{
+                height: 20vh;
+                h4{
+                    font-size: 0.8em;
+                }
+                p{
+                    font-size: 0.6em;
+                    font-weight: 400;
+                    padding: 3%;
+                }
+            }
+        }
+    }
+
+    .earn-container{
+        text-align: center;
+        padding-bottom: 20vh;
+
+        h1{
+            margin-top: 0vh;
+            margin-left: 0vw;
+            font-size:1.6em ;
+        }
+        h3{
+            margin-left: 0vw;
+            font-size: 1.2em;
+            padding: 5%;
+        }
+        .lend-link{
+            margin-left: 0;
+        }
+        .lend-link{
+            font-size: 1em;
+            padding: 1%;
+        }
+        .earn-svg{
+            margin: 0;
+            height: 400px;
+        }
+    }
+
+    .footer{
+        display: none;
+    }
+}

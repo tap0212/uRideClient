@@ -1,0 +1,199 @@
+@import '../../utilities//theme.scss';
+
+
+.city-icon-container-c{
+
+    .city-icon-c{
+        width: 35%;
+        margin-top: 2vh;
+    }
+    
+    .city-icon-div-c{
+        margin-top: 3vh;
+        margin-left: 22vw;
+        text-align: center;
+        cursor: pointer;
+        max-height: 14vh;
+        width: 40%;
+        padding-bottom: 2vh;
+        margin-bottom: 0;
+        border-radius: 5px;
+        transition: 0.2s all ease-in;
+    }
+    .city-p-c{
+        font-size: 0.8em;
+    }
+}
+
+.uCity{
+    padding-top: 3%;
+    margin-left: 4vh;
+    font-weight: 300;
+    color: $blue;
+}
+.uButton{
+    margin-left: 4vh;
+    border: none;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: $blue;
+    color: white;
+}
+.uButton:hover, .uButton:active{
+    cursor: pointer;
+    background-color: $navy;
+}
+
+
+.zoom{
+    height: auto;
+    .tile-section{
+        padding-bottom: 0vh;
+    }
+    .tiles-container{
+        height: auto;
+        margin-top: -2.5%;
+        padding-top: 0;
+        .prevOrder{
+            margin-left: 5%;
+            border: 1px solid $blue;
+            margin-top: 2%;
+            padding: 4%;
+            border-radius: 20px;
+            width: 83%;
+            h2{
+                font-weight: 300;
+                margin-bottom: 1%;
+                padding-bottom: 0;
+                
+            }
+            h3{
+                font-weight: 300;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                margin-top: 0;
+            }
+            h4{
+                font-weight: 300;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                margin-top: 1%;
+            }
+            h6{
+                text-align: right;
+                font-weight: 300;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                margin-top: 0.5%;
+                padding-top: 0;
+            }
+        }
+    }
+    .tiles-container-dark{
+        background-color: $navy;
+        .prevOrder{
+            color: $off;
+        }
+    
+    }
+    .ride-right{
+        height: 100%;
+        overflow: hidden;
+        .car-svg{
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+    .ride-right-bright{
+        background-color: $off;
+    }
+    .ride-right-dark{
+        background-color: $navy-lt;
+    }
+}
+
+.city-icon-container-c-bright{
+    .city-icon-div-c{
+        background-color: $off;
+    }
+    .city-icon-div-c:hover, .city-icon-div-c:active{
+        border-radius: 5px;
+        background: #D5D5D5;
+        box-shadow:  5px 5px 10px #b5b5b5, 
+                 -5px -5px 10px #f5f5f5;
+    }
+}
+
+.city-icon-container-c-dark{
+    .city-icon-c g{
+        fill: white;
+    }
+    .city-icon-c path {
+        stroke: white;
+        stroke-width: 5px;
+    }
+    .city-p-c{
+        color: white;
+    }
+    .city-icon-div-c{
+        background-color: $navy-lt;
+    }
+    .city-icon-div-c:hover, .city-icon-div-c:active{
+        border-radius: 5px;
+        background: #161625;
+        box-shadow:  11px 11px 22px #13131f, 
+             -11px -11px 22px #19192b;
+    }
+}
+
+@media only screen and (min-width:500px) and  (max-width:960px){
+    .tiles-container{
+        height: auto;
+        padding-bottom: 15vw;
+    }
+    .city-icon-div-c{
+        height: 10vh;
+    }
+    .ride-right{
+        display: none;
+ }
+}
+@media only screen and (max-width:500px){
+    .zoom{
+        margin-top: -2vh;
+        padding-top: 0;
+    }
+    .tiles-container{
+        height: auto;
+        padding-top: 2vh;
+        padding-bottom: 20vh;
+        .tile-section{
+            h2{
+                font-weight: 300;
+            }
+        }
+    }
+
+    .ride-right{
+        display: none;
+ }
+ .city-box{
+     height: 50vh;
+     padding-bottom: 20vw;
+ }
+    .city-icon-container-c{
+        .city-icon-div-c{
+            height: auto;
+            margin-left: 45vw;
+            margin-bottom: 0;
+            margin-top: 2vw;
+            
+            p{
+                font-size: 0.5em;
+                font-weight: 300;
+
+            }
+        }
+    }
+}

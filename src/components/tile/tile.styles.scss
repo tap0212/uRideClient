@@ -1,0 +1,201 @@
+@import '../../utilities/theme.scss';
+
+.car-tile{
+    width: 90%;
+    margin-left: 5%;
+    height: 30vh;
+    margin-top: 5vh;
+    .col1, .col2, .col3{
+        height: 100%;
+    } 
+    .img{
+        margin-top: 10%;
+        margin-left: 5%;
+        height: 140px;
+        width: 168px;
+    }
+    .col1{
+        .like:hover{
+            cursor: pointer;
+        }
+        .unlike:hover{
+            cursor: pointer;
+        }
+    }
+    .col2{
+        h5{
+            width:20%;
+            padding: 0.5%;
+            border-radius: 5px;
+            font-weight: 400;
+            margin-left: 2%;
+            margin-bottom: 4%;
+        }
+        h2{
+            margin-top: 0%;
+            padding-top: 0;
+            margin-left: 2%;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        h3{
+            margin-top: 1%;
+            margin-left: 2%;
+            font-weight: 400;
+            margin-bottom: 2%;
+        }
+        span{
+    
+            margin-left: 3%;
+            font-size: 0.8em;
+        }
+        .fuel{
+            padding: 0%;
+            margin: 0;
+            transform: translateY(3px);
+        }
+        
+    }
+
+    .col3{
+        text-align: right;
+        .star{
+            color: orangered;
+        }
+        h5{
+            font-weight: 300;
+            background-color:#70AD4D;
+            color: white;
+            width: 40%;
+            margin-left: 60%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        h1{
+            margin-top: 2%;
+            font-weight: 300;
+            margin-bottom: 2%;
+        }
+        .rs{
+            font-size: 1.2em;
+        }
+        button{
+            border: none;
+            color: white;
+            margin-top: 0;
+            margin-bottom: 2%;
+            padding: 2% 10% 2% 10%;
+        }
+        button:hover{
+            background-color: $navy;
+            cursor: pointer;
+        }
+        h6{
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 400;
+            padding: 0;
+            color: $darkOff;
+        }
+    }
+}
+.car-tile-bright{
+    .col1, .col2, .col3{
+        border: 0.1px solid white;
+    }
+    .col1{
+        .like{
+            color: red;
+        }
+    }
+    .col2{
+        h5{
+            border: 1.5px solid $blueShadow;
+        }
+    }
+    .col3{
+        button{
+            background-color: $blueShadow;
+        }
+        .rs{
+            color: blue;
+        }
+    }
+    .fuel{
+        color:$blue;
+    }
+}
+.car-tile-dark{
+    .col1, .col2, .col3{
+        border: 0.0145px solid $navy-lt;
+    }
+    .col1{
+        .unlike{
+            color: $off;
+        }
+    }
+    .col2{
+        h5{
+            border: 1.5px solid #0A3D62;
+            color: $off;
+        }
+        h2, h3, span{
+            color: $off;
+        }
+    }
+    .col3{
+        h1{
+            color: white;
+        }
+        h6{
+            color: grey;
+            font-weight: 300;
+        }
+        button{
+            background-color:#0A3D62;
+        }
+        .rs{
+            color: #0A3D62;
+        }
+    }
+    .hr{
+        height: 1px;
+        background-color: $darkOff;
+        border: none;
+    }
+    
+}
+@media only screen and (min-width:500px) and  (max-width:960px){
+    .car-tile{
+        width: 80vw;
+        margin-left:5vw ;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .car-tile{
+        height: 100%;
+        width: 90vw;
+        margin-left: 5vw;
+        .col1, .col2, .col3{
+            height: 100%;
+        }
+        .col1{
+            text-align: center;
+            .img{
+                margin-top: 2%;
+                margin-left: 0%;
+            }
+        }
+        .col2{
+            h5{
+                width:40%;
+            }
+        }
+        .col3{
+            h5{
+                padding: 3px;
+            }
+        }
+    }
+}

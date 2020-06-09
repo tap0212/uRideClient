@@ -1,0 +1,172 @@
+@import "../../utilities/theme.scss";
+
+
+.navbar-container-bright{
+    background-color: $off;
+}
+.navbar-container-dark{
+    background-color: $navy;
+}
+
+.nav-ul{
+    margin: 0;
+    padding-top: 1vh;
+    padding-right: 4vw;
+}
+.logo, .nav-li{
+    list-style-type: none;
+    display: inline;
+}
+.logo{
+    float: left;
+    margin-top: 1vh;
+    font-size: 1.7em;
+    font-weight: 600;
+    .R{
+        color: $blue;
+    }
+}
+.logo-svg{
+    height: 2.8vh;
+    width: 30%;
+    margin-left: 0%;
+}
+.logo-bright{
+    color: $black;
+}
+.logo-dark{
+    color: $white;
+    .logo-svg path{
+        stroke: $off;
+    }
+}
+.nav-li{
+    
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.5%;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+.nav-li-bright{
+    background-color: $off;
+    color: $black;
+}
+.nav-li-dark{
+    background-color: $navy;
+    color: white;
+}
+
+.signup{
+    border-radius: 76px;
+}
+.signup-bright{
+    background-color: $white;
+}
+.signup-dark{
+    background-color: $darkBlack;
+}
+.nav-li:hover, .nav-li:active{
+    cursor: pointer;
+    border-radius: 76px;
+    box-shadow: 0px 15px 20px $off;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-li-bright:hover, .nav-li-bright:active{
+    background-color: $off;
+    color: $black;
+}
+
+.nav-li-dark:hover, .nav-li-dark:active{
+    background-color: $darkOff;
+    color: $white;
+}
+.vBar-container{
+    display: none;
+}
+
+@media only screen and (min-width:500px){
+    .navbar-container{
+        margin: 0;
+        padding: 0;
+        height: 9vh;
+        position:fixed;
+        width: 100vw;
+        top:0px;
+    }
+    .nav-li{
+        float: right;
+    }
+    .vBar-container{
+        display: none;
+    }
+}
+.bright{
+    color: black;
+}
+.dark{
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .navbar-container{
+        display: none;
+    }
+    .vBar-container{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 70px;
+        text-align: center;
+
+    }
+    .vBar-container-bright{
+        background-color: $off;
+        color:black;
+    }
+    .vBar-container-dark{
+        background-color: $navy;
+        color: white;
+            #logo-svg-h path{
+                stroke: $off;
+            }
+    }
+
+    #logo-svg-h{
+        width: 6vh;
+        margin: 0;
+        padding: 0;
+    }
+    .vNav-li{
+        list-style: none;
+        display: inline;
+        margin-left: 3%;
+    }
+    .vLogo{
+        display: inline;
+        margin-left: -5%;
+    }
+    .icon-dark{
+        color: $off;
+    }
+    .icon-bright{
+        color: $black;
+    }
+    #block{
+        display: inline-block;
+    }
+    p, Link{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+}

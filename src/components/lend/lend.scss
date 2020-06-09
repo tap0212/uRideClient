@@ -1,0 +1,204 @@
+@import '../../utilities/theme.scss';
+.lend-head{
+    height: 70vh;
+    background-color: $black;
+    text-align: center;
+
+    h1{
+        padding-top: 25vh;
+        color: $blue;
+        font-weight: 300;
+    }
+    h2{
+        color: $off;
+        font-weight: 400;
+    }
+}
+
+#car-svg{
+    text-align: center;
+}
+
+.lend-form-container{
+    padding-top: 2%;
+    padding-bottom: 10vh;
+    margin-bottom: -3vh;
+    h1{
+        text-align: center;
+        font-weight: 300;
+    }
+    h2{
+        color: $blue;
+        padding: 1% 5% 1% 5%;
+      
+        font-weight: 400;
+    }
+    .lend-form{
+        height: auto;
+        width: 75vw;
+        margin-left: 12.5vw;
+        padding-bottom: 5%;
+    }
+    label{
+        display: block;
+        padding: 1%;
+        font-size: 1em;
+        font-weight: 300;
+        margin-left: 3%;
+    }
+    select, .input{
+        font-weight: 500;
+        margin-left: 6%;
+        width: 80%;
+        border-radius: 5px;
+        padding: 3% 0 3% 2%;
+    }
+    ::placeholder{
+        font-size: 1.1em;
+    }
+    button{
+        margin-left: 12.5%;
+        margin-top: 4%;
+        width: 75%;
+        height: 4.5vh;
+        border: none;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+.img-upload{
+    margin-top: 3%;
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    height: 15vh;
+    overflow: hidden;
+}
+.img-p{
+    margin-top: 10%;
+    text-align: center;
+    font-family: Arial;
+}
+  .img-input{
+position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  height: 15vh;
+  outline: none;
+  opacity: 0;
+  }
+
+.lend-form-container-bright{
+    background-color: $off;
+    .lend-form{
+        border-radius: 11px;
+        background: #d5d5d5;
+        box-shadow:  11px 11px 22px #c8c8c8, 
+                    -11px -11px 22px #e2e2e2;
+        
+        select, .input{
+
+            background-color:$off;
+            color: black;
+            border:2px solid $blueShadow;
+        }
+        ::placeholder{
+            color: grey;
+        }
+    }
+    .btn{
+        border-radius: 1px;
+        background: #627AFD;
+        color: white;
+        transition: 0.2s all ease-in;
+    }
+    .btn:hover, button:active{
+        background-color: $navy;
+        border-radius: 1px;
+        box-shadow:  1px 1px 2px $navy, 
+                     -1px -1px 2px $navy;
+
+    }
+    .btn-disabled{
+        background-color: $navy;
+    }
+    .btn-disabled:hover{
+        cursor: not-allowed;
+    }
+    .img-upload{
+        border: 2px dashed black;
+    }
+}
+
+#car{
+    width: 80vh;
+    margin-left: 10vh;
+}
+
+
+.lend-form-container-dark{
+    background-color: $navy;
+    color: white;
+    .lend-form{
+
+        border-radius: 11px;
+        background: $navy;
+        box-shadow:  11px 11px 22px $navy, 
+                    -11px -11px 22px $navy;
+        select{
+            color: grey;
+        }
+        select, .input{
+            background-color:$navy-lt;
+            border:none;
+        }
+        select, .input{
+            color: white;
+        }
+        ::placeholder{
+            color: grey;
+        }
+    }
+    
+    button{
+        border-radius: 1px;
+        background: $blue;
+        color: white;
+        transition: 0.2s all ease-in;
+    }
+    button:hover, button:active{
+
+        border-radius: 1px;
+        background: $blueShadow;
+        box-shadow:  1px 1px 2px $blueShadow, 
+                     -1px -1px 2px $blueShadow;
+    }
+    .img-upload{
+        border: 2px dashed $off;
+    }
+    .btn-disabled{
+        background-color: $navy;
+    }
+    .btn-disabled:hover{
+        cursor: not-allowed;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .lend-head{
+        margin-top: -22px;
+        height: 40vh;
+        h1{
+            font-size: 1.3em;
+            padding-top: 10vh;
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+        h2{
+            font-size: 1em;
+        }
+    }
+}

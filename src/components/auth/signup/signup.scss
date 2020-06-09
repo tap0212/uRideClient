@@ -1,0 +1,200 @@
+@import '../../../utilities/theme.scss';
+//general
+.join-head{
+    font-weight: 300;
+    font-size: 2.6em;
+    margin-left: 1.5vw;
+    padding-top: 8vh;
+    padding-bottom: 0;
+    margin-bottom: 1.4vh;
+}
+.join-head-sub{
+    font-weight: 400;
+    margin-left: 1.5vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+.signup-svg{
+    width: 70%;
+    margin-top: 10vh;
+}
+
+.login-svg{
+    width: 65%;
+    margin-top: 0vh;
+    margin-left: 2%;
+}
+.signup-form{
+    height: 65vh;
+    margin-top: 13vh;
+    width: 35vw;
+    margin-left: 7.5vw;
+}
+.signup-button{
+    margin-left: 1.5vw;
+    margin-top: 4%;
+    padding: 1%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s padding ease-in;
+}
+.signup-button:hover, .signup-button:active{
+    cursor: pointer;
+    padding: 1.1%;
+}
+.checkbox-div{
+    margin-left: 1.5vw;
+    font-size: 0.9em;
+    line-height: 22px;
+}
+.form-control-div{
+    margin-left: 1.5vw;
+    margin-bottom: 2.5vh;
+    label{
+        display: block;
+    }
+    input{
+        display: block;
+        border: none;
+
+        width: 60%;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 1.3%;
+    }
+ 
+}
+
+//bright
+.signup-container{
+    height: 91vh;
+    margin-top: 5vh;
+    overflow: hidden;
+        
+    .signup-right{
+        height: 91vh;
+        display: block;
+    }
+
+    .signup-form{
+        border-radius: 12px;
+        background: #FAFAFA;
+        box-shadow:  5px 5px 10px #9b9b9b, 
+                    -5px -5px 10px #ffffff;
+    }
+    .form-control-div{
+        input{
+            background-color: $navy;
+            color: $white;
+        }
+        input:focus {
+            outline: none !important;
+            border: 2.5px solid white;
+            box-shadow: 0 0 10px $blue;
+        }   
+    }
+    .signup-button{
+        background-color: $blue;
+        color: white;
+        font-weight: 300;
+    }
+    .signup-button:active, .signup-button:hover{
+        background-color: $navy;
+        color: white;
+    }
+    .login-link{
+        text-decoration: none;
+        color: $blue;
+        padding-left: 2%;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
+//dark
+.signup-container-dark{
+    color: $off;
+    height: 91vh;
+    margin-top: 9vh;
+    overflow: hidden;
+    background-color: $navy;
+
+    .signup-right{
+        height: 91vh;
+        display: block;
+    }
+    .signup-left{
+        height: 91vh;
+    }
+    .signup-form{
+        border-radius: 12px;
+        background: #161625;
+        box-shadow:  6px 6px 12px #0e0e17, 
+                     -6px -6px 12px #1e1e33;
+    }
+    .form-control-div{
+        input{
+            background-color: #161625;
+            color: $off;
+            border: .5px solid $off;
+            box-shadow: 0 0 1px $blue;
+        }
+        input:focus {
+            outline: none !important;
+            
+        }   
+    }
+    .signup-button{
+        background-color: $off;
+        color: $black;
+        font-weight: 300;
+    }
+    .signup-button:active, .signup-button:hover{
+        background-color: $navy;
+        color: white;
+        font-weight: 400;
+        border:0.3px solid $off;
+    }
+    .login-link{
+        padding-left: 2%;
+        text-decoration: none;
+        color: $blueShadow;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width:500px) and  (max-width:960px){
+    .signup-right{
+        display: none;
+    }
+    .signup-form{
+        width: 70vw;
+        margin-top: 10vh;
+        margin-left: 15vw;
+    }
+}
+@media only screen and (max-width:500px){
+    .signup-right{
+        display: none;
+    }
+    .signup-form{
+        width: 80vw;
+        margin-top: 0vh;
+        margin-left: 10vw;
+    }
+    .join-head{
+        font-size: 2.2em;
+    }
+    .signup-form{
+        height: 70vh;
+        margin-top: 0;
+    }
+    .signup-container-dark{
+        height: 100vh;
+        margin-top: 0vh;
+        .signup-form{
+            margin-top: 7vh;
+        }
+    }
+}

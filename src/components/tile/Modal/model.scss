@@ -1,0 +1,121 @@
+@import '../../../utilities/theme.scss';
+.booking-popup{
+    width: 60vh;
+    height: 60vh;
+    h2{
+        font-weight: 300;
+        padding-top: 5%;
+    }
+    p{
+        width: 25%;
+        padding: 1%;
+    }
+    h4{
+        margin-top: 10%;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    h5{
+        font-weight: 300;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 1.5%;
+    }
+    .last{
+        margin-bottom: 5%;
+    }
+
+
+.btn-next{
+    float: right;
+    background-color: $blue;
+    color: white;
+    padding: 2.5%;
+    border: none;
+}
+.btn-next:hover, .btn-next:active{
+    background-color: $navy;
+    cursor: pointer;
+}
+.btn-prev{
+    float: left;
+    background-color: $blue;
+    color: white;
+    padding: 2.5%;
+    border: none;
+}
+.btn-prev:hover, .btn-prev:active{
+    background-color: $navy;
+    cursor: pointer;
+}
+.step3{
+    margin-left: 58%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    padding: 1.5%;
+    width: 40%;
+    h5{
+        font-weight: 400;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 2%;
+    }
+}
+.btn-confirm{
+    float: right;
+    border: none;
+    padding: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: #70AD4D;
+    color: white;
+    transition: .2s all ease-in;
+}
+.btn-confirm:hover, .btn-confirm:active{
+    cursor: pointer;
+    background-color: $navy;
+}
+.btn-disabled{
+    float: right;
+    border: none;
+    padding: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: $navy;
+    color: white;
+    transition: .2s all ease-in;
+}
+.btn-disabled:hover{
+    cursor: not-allowed;
+}
+.error{
+    color: red;
+    font-weight: 300;
+}
+.success-ride{
+    height: 70%;
+}
+.success-lottie{
+    width: 50%;
+}
+}
+.booking-popup-bright{
+    p{
+        border: 3px solid $blue;
+    }
+    .step3{
+        border: 1px solid $off;
+    }
+}
+.caution{
+    text-align: center;
+    color: red;
+    font-style: 1.1em;
+}
+
+@media only screen and (max-width:540px){
+    .booking-popup{
+        height: 40vh;
+        width: 80vw;
+    }
+}
